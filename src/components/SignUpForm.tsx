@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PocketBase from "pocketbase"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 const SignUpForm =  () => {
   const pb = new PocketBase('http://127.0.0.1:8090');
   const [formData, setFormData] = useState({
@@ -13,7 +14,7 @@ const SignUpForm =  () => {
     passConfirm: "",
   });
 
-  const handleChange = (e: { target: { name: any; value: any; }; }) => {
+  const handleChange = (e: { target: { name: string; value: string; }; }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -38,9 +39,10 @@ try {
   formData.password = "";
   formData.passConfirm = "";
 
-} catch (error: any) {
+} catch (error) {
+  const errorMessage = "Something went wrong";
   console.log("error",error);
-  toast.error(error.message);
+  toast.error(errorMessage);
   // Handle error here
   
 }
@@ -132,7 +134,7 @@ try {
        </div>
       </form>
     </div>
-  <div className="w-40 pl-20 md:my-2 my-2">
+  <div className="w-40 pl-20 md:mt-2 mt-2 pb-4">
   <Link  to="/"><button className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:ring-1 ring-white ">Go back</button></Link>
   </div>
   <ToastContainer />

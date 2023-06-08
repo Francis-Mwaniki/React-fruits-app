@@ -7,7 +7,7 @@ const Login = () => {
         password:"",
         confirmPassword:""
     })
-    const handleChange=(e: { target: { name: any; value: any } })=>{
+    const handleChange=(e: { target: { name: string; value: string } })=>{
         setFormData({...formData, [e.target.name]:e.target.value })
     }
     const handleSubmit=(e: { preventDefault: () => void; })=>{
