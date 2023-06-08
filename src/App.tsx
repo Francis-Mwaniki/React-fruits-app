@@ -7,6 +7,7 @@ import Login from './components/Login';
 // import PocketBase from "pocketbase"
 // import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import RetrieveFruits from './components/RetrieveFruits';
 // import { useState, useEffect } from "react";
 const App = () => {
   // useEffect(() => {
@@ -47,6 +48,7 @@ const App = () => {
             <Link className='border-b-2 border-slate-300' to="/">Home</Link>
             <Link className='border-b-2 border-slate-300' to="/SignUpForm">SignUp</Link>
             <Link className='border-b-2 border-slate-300' to="/Login">Login</Link>
+            <Link className='border-b-2 border-slate-300' to="/fruits">Fruits</Link>
           </div>
         </div>
         <div className="flex justify-between space-x-3 px-5 items-center py-4 pt-16">
@@ -62,6 +64,9 @@ const App = () => {
           <Route  path="/" element={<Fruits/>} />
           <Route path="/SignUpForm" element={<SignUpForm />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/fruits" element={<RetrieveFruits />} />
+          <Route path="*" element={<h1>Not Found</h1>} />
+          
         </Routes>
         
       </div>
