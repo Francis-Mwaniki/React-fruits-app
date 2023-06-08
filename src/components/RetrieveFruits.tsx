@@ -275,7 +275,8 @@ const RetrieveFruits = () => {
             {Fruits.map((fruit) => (
               <div
                 key={fruit.id}
-                className={`bg-${fruit.color}-600 p-4 rounded-lg shadow-md`}
+                className={` p-4 rounded-lg shadow-md`}
+                style={{ backgroundColor: `${fruit.color}` }}
               >
                 <h2 className="text-lg text-gray-200 font-bold mb-2">
                   <span className="px-4 text-white text-xl">name</span> ---- {fruit.name}
