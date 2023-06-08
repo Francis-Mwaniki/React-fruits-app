@@ -38,7 +38,7 @@ const RetrieveFruits = () => {
         {
           id: 2,
           name: "Banana",
-          color: "yellow",
+          color: "blue",
           family: "Musaceae",
           order: "Zingiberales",
           genus: "Musa",
@@ -70,7 +70,7 @@ const RetrieveFruits = () => {
         {
             id: 4,
             name: "Mango",
-            color: "yellow",
+            color: "blue",
             family: "Anacardiaceae",
             order: "Sapindales",
             genus: "Mangifera",
@@ -102,7 +102,7 @@ const RetrieveFruits = () => {
           {
             id: 6,
             name: "Pineapple",
-            color: "yellow",
+            color: "blue",
             family: "Bromeliaceae",
             order: "Poales",
             genus: "Ananas",
@@ -278,34 +278,34 @@ const RetrieveFruits = () => {
                 className={` p-4 rounded-lg shadow-md`}
                 style={{ backgroundColor: `${fruit.color}` }}
               >
-                <h2 className="text-lg text-gray-500 font-bold mb-2">
+                <h2 className="text-lg text-gray-200 font-bold mb-2">
                   <span className="px-4 text-white text-xl">name</span> ---- {fruit.name}
                 </h2>
-                <p className="text-sm text-gray-500 font-medium">
+                <p className="text-sm text-gray-200 font-medium">
                 <span className="px-4 text-white text-xl">family</span> ---- {fruit.family}
                 </p>
-                <p className="text-sm text-gray-500 font-medium">
+                <p className="text-sm text-gray-200 font-medium">
                 <span className="px-4 text-white text-xl">order</span> ---- {fruit.order}
                 </p>
-                <p className="text-sm text-gray-500 font-medium">
+                <p className="text-sm text-gray-200 font-medium">
                 <span className="px-4 text-white text-xl">genus</span> ---- {fruit.genus}
                 </p>
-                <p className="text-sm text-gray-500 font-medium">
+                <p className="text-sm text-gray-200 font-medium">
                 <span className="px-4 text-white text-xl">color</span> ----  {fruit.color}
                 </p>
-                <p className="text-sm text-gray-500 font-medium">
+                <p className="text-sm text-gray-200 font-medium">
              <span className="px-4 text-white text-xl">calories</span> ----  {fruit.nutritions.calories}
                 </p>
-                <p className="text-sm text-gray-500 font-medium">
+                <p className="text-sm text-gray-200 font-medium">
         <span className="px-4 text-white text-xl">carbohydrates</span> ----{fruit.nutritions.carbohydrates}
                 </p>
-                <p className="text-sm text-gray-500 font-medium">
+                <p className="text-sm text-gray-200 font-medium">
                  <span className="px-4 text-white text-xl">fat</span> ----  {fruit.nutritions.fat}
                 </p>
-                <p className="text-sm text-gray-500 font-medium">
+                <p className="text-sm text-gray-200 font-medium">
              <span className="px-4 text-white text-xl">protein</span> ---- {fruit.nutritions.protein}
                 </p>
-                <p className="text-sm text-gray-500 font-medium">
+                <p className="text-sm text-gray-200 font-medium">
                <span className="px-4 text-white text-xl">sugar</span> ----{fruit.nutritions.sugar}
                 </p>
               </div>
