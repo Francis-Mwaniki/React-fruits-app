@@ -1,4 +1,4 @@
-import {  useEffect, useState } from "react";
+import {   useState } from "react";
 
 const RetrieveFruits = () => {
 
@@ -262,7 +262,8 @@ const RetrieveFruits = () => {
       ];
  
       
-    const [Fruits, setFruits] = useState<Fruit[]>(fruits)
+    const [Fruits] = useState<Fruit[]>(fruits)
+   
  
 
 
